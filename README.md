@@ -4,6 +4,14 @@ AllChrono is a global luxury watch marketplace anchored in Saudi Arabia. Its tra
 
 This native SwiftUI take-home implements the watch-discovery portion of that experience. It renders the provided catalogue of approximately 1,000 watches, supports search and brand filtering, and loads product imagery from the network.
 
+## App preview
+
+<p align="center">
+  <img src="Screenshot.png" width="360" alt="AllChrono iOS app showing the watch catalogue, search, brand filters, and featured watches">
+</p>
+
+The home screen gives users an immediate overview of the marketplace with catalogue-wide search, brand browsing, pricing, favorites, and a responsive two-column watch grid.
+
 ## Requirements
 
 - Xcode 26.4 or later

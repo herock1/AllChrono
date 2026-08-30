@@ -89,7 +89,17 @@ struct WatchCatalogView: View {
     private var header: some View {
         VStack(alignment: .leading, spacing: 18) {
             HStack {
-                Text("All") + Text("Chrono").foregroundStyle(Color.chronoGold)
+                Image("AllChronoLogo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 158, height: 28, alignment: .leading)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 5)
+                    .background(
+                        Color(red: 0.98, green: 0.97, blue: 0.94),
+                        in: RoundedRectangle(cornerRadius: 8)
+                    )
+                    .accessibilityLabel("AllChrono")
                 Spacer()
                 Button(action: {}) {
                     Image(systemName: "bell")
@@ -100,8 +110,6 @@ struct WatchCatalogView: View {
                 .buttonStyle(.plain)
                 .accessibilityLabel("Notifications")
             }
-            .font(.system(size: 26, weight: .semibold, design: .serif))
-
             VStack(alignment: .leading, spacing: 7) {
                 Text("GLOBAL LUXURY WATCH MARKETPLACE")
                     .font(.caption2.weight(.bold))
