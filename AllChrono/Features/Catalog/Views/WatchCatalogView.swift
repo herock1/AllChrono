@@ -101,14 +101,6 @@ struct WatchCatalogView: View {
                     )
                     .accessibilityLabel("AllChrono")
                 Spacer()
-                Button(action: {}) {
-                    Image(systemName: "bell")
-                        .frame(width: 40, height: 40)
-                        .background(Color.cardBackground, in: Circle())
-                        .overlay(Circle().stroke(Color.cardBorder, lineWidth: 1))
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel("Notifications")
             }
             VStack(alignment: .leading, spacing: 7) {
                 Text("GLOBAL LUXURY WATCH MARKETPLACE")
